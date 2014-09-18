@@ -11,8 +11,8 @@
 		71B57CBA19C7770E00EF6AE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B57CB919C7770E00EF6AE3 /* AppDelegate.m */; };
 		71B57CBC19C7770E00EF6AE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B57CBB19C7770E00EF6AE3 /* Images.xcassets */; };
 		71B57CCB19C7770E00EF6AE3 /* BePersistentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B57CCA19C7770E00EF6AE3 /* BePersistentTests.m */; };
-		71B57CE119C77B6500EF6AE3 /* PersistentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B57CDF19C77B6500EF6AE3 /* PersistentViewController.m */; };
-		71B57CE219C77B6500EF6AE3 /* PersistentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B57CE019C77B6500EF6AE3 /* PersistentViewController.xib */; };
+		BA4A692B19CA61A6000EC947 /* EJHPersistentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4A692919CA61A6000EC947 /* EJHPersistentViewController.m */; };
+		BA4A692C19CA61A6000EC947 /* EJHPersistentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA4A692A19CA61A6000EC947 /* EJHPersistentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +35,9 @@
 		71B57CC419C7770E00EF6AE3 /* BePersistentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BePersistentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B57CC919C7770E00EF6AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71B57CCA19C7770E00EF6AE3 /* BePersistentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BePersistentTests.m; sourceTree = "<group>"; };
-		71B57CDE19C77B6500EF6AE3 /* PersistentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentViewController.h; sourceTree = "<group>"; };
-		71B57CDF19C77B6500EF6AE3 /* PersistentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentViewController.m; sourceTree = "<group>"; };
-		71B57CE019C77B6500EF6AE3 /* PersistentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersistentViewController.xib; sourceTree = "<group>"; };
+		BA4A692819CA61A6000EC947 /* EJHPersistentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EJHPersistentViewController.h; path = ../EJHPersistentViewController.h; sourceTree = "<group>"; };
+		BA4A692919CA61A6000EC947 /* EJHPersistentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EJHPersistentViewController.m; path = ../EJHPersistentViewController.m; sourceTree = "<group>"; };
+		BA4A692A19CA61A6000EC947 /* EJHPersistentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EJHPersistentViewController.xib; path = ../EJHPersistentViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +81,6 @@
 			children = (
 				71B57CB819C7770E00EF6AE3 /* AppDelegate.h */,
 				71B57CB919C7770E00EF6AE3 /* AppDelegate.m */,
-				71B57CDE19C77B6500EF6AE3 /* PersistentViewController.h */,
-				71B57CDF19C77B6500EF6AE3 /* PersistentViewController.m */,
-				71B57CE019C77B6500EF6AE3 /* PersistentViewController.xib */,
 				71B57CBB19C7770E00EF6AE3 /* Images.xcassets */,
 				71B57CB419C7770E00EF6AE3 /* Supporting Files */,
 			);
@@ -93,6 +90,9 @@
 		71B57CB419C7770E00EF6AE3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA4A692819CA61A6000EC947 /* EJHPersistentViewController.h */,
+				BA4A692919CA61A6000EC947 /* EJHPersistentViewController.m */,
+				BA4A692A19CA61A6000EC947 /* EJHPersistentViewController.xib */,
 				71B57CB519C7770E00EF6AE3 /* Info.plist */,
 				71B57CB619C7770E00EF6AE3 /* main.m */,
 			);
@@ -197,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71B57CBC19C7770E00EF6AE3 /* Images.xcassets in Resources */,
-				71B57CE219C77B6500EF6AE3 /* PersistentViewController.xib in Resources */,
+				BA4A692C19CA61A6000EC947 /* EJHPersistentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71B57CE119C77B6500EF6AE3 /* PersistentViewController.m in Sources */,
 				71B57CBA19C7770E00EF6AE3 /* AppDelegate.m in Sources */,
 				71B57CB719C7770E00EF6AE3 /* main.m in Sources */,
+				BA4A692B19CA61A6000EC947 /* EJHPersistentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BePersistent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -333,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BePersistent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +353,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = BePersistentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BePersistent.app/BePersistent";
@@ -366,6 +369,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = BePersistentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BePersistent.app/BePersistent";
@@ -391,6 +395,7 @@
 				71B57CD019C7770E00EF6AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71B57CD119C7770E00EF6AE3 /* Build configuration list for PBXNativeTarget "BePersistentTests" */ = {
 			isa = XCConfigurationList;
@@ -399,6 +404,7 @@
 				71B57CD319C7770E00EF6AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

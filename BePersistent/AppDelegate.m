@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "PersistentViewController.h"
+#import "EJHPersistentViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[PersistentViewController new]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[EJHPersistentViewController new]];
+    
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults synchronize];
+    
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
